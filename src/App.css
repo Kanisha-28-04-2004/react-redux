@@ -1,0 +1,45 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+form {
+  margin-top: 10%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+  margin-right: 5% ;
+}
+
+.btn{
+  width: 150px;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+}
+.btn1{
+  width: 100px;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  margin-left: 5%;
+}
