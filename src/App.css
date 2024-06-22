@@ -1,85 +1,49 @@
 .App {
   font-family: Arial, sans-serif;
-  text-align: center;
+  margin: 20px;
 }
 
-.navbar {
-  display: flex;
-  width: 98%;
-  justify-content: space-between;
-  padding: 10px;
-  margin-right: 5%;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #dee2e6;
+h1 {
+  color: #333;
 }
 
-form {
-  margin-top: 10%;
-}
-
-label {
-  display: block;
+.filter {
   margin-bottom: 10px;
 }
 
-button {
-  margin-top: 10px;
-  margin-right: 5% ;
+label {
+  margin-right: 10px;
 }
 
-.btn{
-  width: 150px;
-  background-color: black;
-  color: white;
-  border: none;
-  height: 40px;
-  border-radius: 4px;
-}
-.btn1{
-  width: 100px;
-  background-color: black;
-  color: white;
-  border: none;
-  height: 40px;
-  border-radius: 4px;
-  margin-left: 5%;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.toggle-button {
-  display: inline-flex;
-  align-items: center;
-  width: 50px;
-  height: 25px;
-  background-color: #ccc;
-  border-radius: 25px;
+input {
   padding: 5px;
-  cursor: pointer;
-  position: relative;
-  transition: background-color 0.3s;
-  
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.toggle-button.active {
-  background-color: #4caf50;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.toggle-button .toggle-circle {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 50%;
-  transition: transform 0.3s;
+table, th, td {
+  border: 1px solid #ddd;
 }
 
-.toggle-button.active .toggle-circle {
-  transform: translateX(25px);
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
 }

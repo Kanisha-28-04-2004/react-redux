@@ -1,22 +1,23 @@
-import React from 'react';
-import '../App.css';
+import React, { useState } from 'react';
+import './Navbar.css';
 
-function Navbar({ isStudent, onToggle }) {
+const Navbar = ({ onToggle }) => {
+  const [isStaff, setIsStaff] = useState(true);
+
+  const handleToggle = () => {
+    setIsStaff(!isStaff);
+    onToggle(!isStaff);
+  };
+
   return (
     <nav className="navbar">
-      <h1>KEC</h1>
-      <div className="toggle-container">
-        <span className="toggle-text"> Staff </span>
-        <div
-          className={`toggle-button ${isStudent ? 'active' : ''}`}
-          onClick={onToggle}
-        >
-          <div className="toggle-circle"></div>
-        </div>
-        <span className="toggle-text"> Student </span>
+      <span>Staff</span>
+      <div className="toggle-switch" onClick={handleToggle}>
+        <div className={`toggle-thumb ${isStaff ? 'staff' : 'student'}`}></div>
       </div>
+      <span>Student</span>
     </nav>
   );
-}
+};
 
 export default Navbar;

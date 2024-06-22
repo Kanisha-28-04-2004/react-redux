@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  
+  .toggle-switch {
+    width: 50px;
+    height: 25px;
+    background-color: #007bff;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .toggle-thumb {
+    width: 23px;
+    height: 23px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    transition: 0.3s;
+  }
+  
+  .toggle-thumb.staff {
+    left: 1px;
+  }
+  
+  .toggle-thumb.student {
+    left: 26px;
+  }
+  
